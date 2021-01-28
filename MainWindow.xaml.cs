@@ -15,7 +15,7 @@ using System.Windows.Shapes;
 
 // build player classes simliar to the classes i made in python CompSci 1
 // build locations next?
-
+// test
 
 namespace HWAMDnew
 {
