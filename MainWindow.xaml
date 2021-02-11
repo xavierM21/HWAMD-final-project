@@ -5,8 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HWAMDnew"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Basic" Height="768" Width="1024">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="225"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" Content="M.M." Background="AliceBlue"></Label>
+        <Label Grid.Row="1" Grid.Column="0" Content="Player data goes here // change color to something more appealing" Background="Aquamarine"></Label>
+        <Label Grid.Row="1" Grid.Column="1" Content="Game data // change this to a slightly darker color or leave idk" Background="Beige"></Label>
+        <Label Grid.Row="2" Grid.Column="0" Content="usr inventory/objectives // same note as GridRow1 column0" Background="BurlyWood"></Label>
+        <Label Grid.Row="2" Grid.Column="1" Content="combat/movement ctrls // fine" Background="Lavender"></Label>
+        
+       
         
     </Grid>
 </Window>

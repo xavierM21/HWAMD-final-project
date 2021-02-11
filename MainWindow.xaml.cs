@@ -15,7 +15,19 @@ using System.Windows.Shapes;
 
 // build player classes simliar to the classes i made in python CompSci 1
 // build locations next?
+// add monsters to these locations
+// once player defeats monster have gold and loot drop
+// if usr losses to the monster
+// reset location and refil their health to max or 75 not sure
+// add side quests
 // test
+// usr info:
+// name | idk
+// class | Fighter
+// HP | 10(int)
+// XP | 0
+// lvl | 1
+// Gold | 25
 
 namespace HWAMDnew
 {
