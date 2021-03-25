@@ -15,16 +15,45 @@
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="250"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="276*"></ColumnDefinition>
+            <ColumnDefinition Width="107*"/>
         </Grid.ColumnDefinitions>
 
-        <Label Grid.Row="0" Grid.Column="0" Content="M.M." Background="AliceBlue"></Label>
-        <Label Grid.Row="1" Grid.Column="0" Content="Player data goes here // change color to something more appealing" Background="Aquamarine"></Label>
-        <Label Grid.Row="1" Grid.Column="1" Content="Game data // change this to a slightly darker color or leave idk" Background="Beige"></Label>
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Content="M.M." Background="AliceBlue"></Label>
+        <Grid Grid.Row="1" Grid.Column="0"  Background="Aquamarine">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Content="Name:"/>
+            <Label Grid.Row="0" Grid.Column="1" Content="{Binding CurrentPlayer.Name}"/>
+            <Label Grid.Row="1" Grid.Column="0" Content="Class:"/>
+            <Label Grid.Row="1" Grid.Column="1" Content="{Binding CurrentPlayer.CharClass}"/>
+            <Label Grid.Row="2" Grid.Column="0" Content="HP"/>
+            <Label Grid.Row="2" Grid.Column="1" Content="{Binding CurrentPlayer.HP}"/>
+            <Label Grid.Row="3" Grid.Column="0" Content="Gold"/>
+            <Label Grid.Row="3" Grid.Column="1" Content="{Binding CurrentPlayer.Gold}"/>
+            <Label Grid.Row="4" Grid.Column="0" Content="XP"/>
+            <Label Grid.Row="4" Grid.Column="1" Content="{Binding CurrentPlayer.XP}"/>
+            <Label Grid.Row="4" Grid.Column="0" Content="LVL" Margin="0,27,0,-27" />
+            <Label Grid.Row="4" Grid.Column="1" Content="{Binding CurrentPlayer.Lvl}" Margin="0,27,0,-27"  />
+        </Grid>
+
+
+        <Label Grid.Row="1" Grid.Column="1" Content="Game data // change this to a slightly darker color or leave idk" Background="Beige" Grid.ColumnSpan="2"></Label>
         <Label Grid.Row="2" Grid.Column="0" Content="usr inventory/objectives // same note as GridRow1 column0" Background="BurlyWood"></Label>
-        <Label Grid.Row="2" Grid.Column="1" Content="combat/movement ctrls // fine" Background="Lavender"></Label>
-        
-       
-        
+        <Label Grid.Row="2" Grid.Column="1" Content="combat/movement ctrls // fine" Background="Lavender" Grid.ColumnSpan="2"></Label>
+
+
+
     </Grid>
 </Window>

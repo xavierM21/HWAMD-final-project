@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using engine.ViewModels;
 
 // build player classes simliar to the classes i made in python CompSci 1
 // build locations next?
@@ -36,9 +37,14 @@ namespace HWAMDnew
     /// </summary>
     public partial class MainWindow : Window
     {
+        private GameSession _gameSession;
         public MainWindow()
         {
             InitializeComponent();
+
+            _gameSession = new GameSession();
+
+            DataContext = _gameSession;
         }
     }
 }

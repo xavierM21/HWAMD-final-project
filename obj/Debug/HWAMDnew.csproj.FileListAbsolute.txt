@@ -12,3 +12,7 @@ C:\Users\xmora\source\repos\HWAMDnew\obj\Debug\HWAMDnew.csproj.GenerateResource.
 C:\Users\xmora\source\repos\HWAMDnew\obj\Debug\HWAMDnew.csproj.CoreCompileInputs.cache
 C:\Users\xmora\source\repos\HWAMDnew\obj\Debug\HWAMDnew.exe
 C:\Users\xmora\source\repos\HWAMDnew\obj\Debug\HWAMDnew.pdb
+C:\Users\xmora\source\repos\HWAMDnew\obj\Debug\HWAMDnew.csprojAssemblyReference.cache
+C:\Users\xmora\source\repos\HWAMDnew\bin\Debug\engine.dll
+C:\Users\xmora\source\repos\HWAMDnew\bin\Debug\engine.pdb
+C:\Users\xmora\source\repos\HWAMDnew\obj\Debug\HWAMDnew.csproj.CopyComplete
