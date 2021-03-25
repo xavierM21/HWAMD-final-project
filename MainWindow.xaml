@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HWAMDnew"
         mc:Ignorable="d"
+        FontSize="11pt"
         Title="Basic" Height="768" Width="1024">
     <Grid>
         <Grid.RowDefinitions>
@@ -14,14 +15,15 @@
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="250"></ColumnDefinition>
-            <ColumnDefinition Width="276*"></ColumnDefinition>
-            <ColumnDefinition Width="107*"/>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
         <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Content="M.M." Background="AliceBlue"></Label>
-        <Grid Grid.Row="1" Grid.Column="0"  Background="Aquamarine">
+        <Grid Grid.Row="1" Grid.Column="0"  Background="#B18FCF">
             <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
@@ -48,10 +50,32 @@
             <Label Grid.Row="4" Grid.Column="1" Content="{Binding CurrentPlayer.Lvl}" Margin="0,27,0,-27"  />
         </Grid>
 
+        <Grid Grid.Row="1" Grid.Column="1" Background="#D8D8F6">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
 
-        <Label Grid.Row="1" Grid.Column="1" Content="Game data // change this to a slightly darker color or leave idk" Background="Beige" Grid.ColumnSpan="2"></Label>
-        <Label Grid.Row="2" Grid.Column="0" Content="usr inventory/objectives // same note as GridRow1 column0" Background="BurlyWood"></Label>
-        <Label Grid.Row="2" Grid.Column="1" Content="combat/movement ctrls // fine" Background="Lavender" Grid.ColumnSpan="2"></Label>
+            <Border Grid.Row="0" Grid.Column="1" BorderBrush="Black" BorderThickness="1">
+                <Grid Margin="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" HorizontalAlignment="Center" Text="{Binding CurrentLocation.Name}"/>
+                    <TextBlock Grid.Row="2" HorizontalAlignment="Center" Text="{Binding CurrentLocation.Description }"/>
+                </Grid>
+            </Border>
+        </Grid>
+        
+        <Label Grid.Row="2" Grid.Column="0" Content="usr inventory/objectives // same note as GridRow1 column0" Background="#978897"></Label>
+        <Label Grid.Row="2" Grid.Column="1" Content="combat/movement ctrls // fine" Background="#494850" Grid.ColumnSpan="2"></Label>
 
 
 
