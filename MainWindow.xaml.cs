@@ -46,5 +46,10 @@ namespace HWAMDnew
 
             DataContext = _gameSession;
         }
+        // added for testing
+        private void ButtonBase_onClick(object sender, RoutedEventArgs e)
+        {
+            _gameSession.CurrentPlayer.XP = _gameSession.CurrentPlayer.XP + 10;
+        }
     }
 }
