@@ -14,21 +14,8 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using engine.ViewModels;
 
-// build player classes simliar to the classes i made in python CompSci 1
-// build locations next?
-// add monsters to these locations
-// once player defeats monster have gold and loot drop
-// if usr losses to the monster
-// reset location and refil their health to max or 75 not sure
-// add side quests
-// test
-// usr info:
-// name | idk
-// class | Fighter
-// HP | 10(int)
-// XP | 0
-// lvl | 1
-// Gold | 25
+
+// https://docs.microsoft.com/en-us/dotnet/api/system.windows.routedeventargs?view=net-5.0
 
 namespace HWAMDnew
 {
@@ -51,5 +38,27 @@ namespace HWAMDnew
         {
             _gameSession.CurrentPlayer.XP = _gameSession.CurrentPlayer.XP + 10;
         }
+
+        private void onClick_MoveNorth(object sender, RoutedEventArgs e)
+        {
+            _gameSession.MoveNorth();
+        }
+        private void onClick_MoveWest(object sender, RoutedEventArgs e)
+        {
+            _gameSession.MoveWest();
+        }
+        private void onClick_MoveEast(object sender, RoutedEventArgs e)
+        {
+            _gameSession.MoveEast();
+        }
+        private void onClick_MoveSouth(object sender, RoutedEventArgs e)
+        {
+            _gameSession.MoveSouth();
+        }
+
+        // moveEast,west,south,north will be added here and set as a private simliar to the event above
+        // event handlers will be made inside gamesesson.cs
+        // locationAt will be used to change location by suing Current.Location.Xcoord and Ycoord. images, descriptions and others should change if i did everything right.
+
     }
 }
