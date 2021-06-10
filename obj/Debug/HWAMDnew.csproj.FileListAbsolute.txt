@@ -4,7 +4,6 @@ C:\Users\xmora\source\repos\HWAMDnew\bin\Debug\HWAMDnew.pdb
 C:\Users\xmora\source\repos\HWAMDnew\obj\Debug\MainWindow.g.cs
 C:\Users\xmora\source\repos\HWAMDnew\obj\Debug\App.g.cs
 C:\Users\xmora\source\repos\HWAMDnew\obj\Debug\HWAMDnew_MarkupCompile.cache
-C:\Users\xmora\source\repos\HWAMDnew\obj\Debug\HWAMDnew_MarkupCompile.lref
 C:\Users\xmora\source\repos\HWAMDnew\obj\Debug\MainWindow.baml
 C:\Users\xmora\source\repos\HWAMDnew\obj\Debug\HWAMDnew.g.resources
 C:\Users\xmora\source\repos\HWAMDnew\obj\Debug\HWAMDnew.Properties.Resources.resources
